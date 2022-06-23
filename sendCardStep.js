@@ -48,7 +48,7 @@ export default defineComponent({
 
       // send text 
 
-      let textMessage = '<b>Толкование карты: </b> ' + card.interpretation;
+      let textMessage = '<b>Название: </b>'+card.name+'\n<b>Толкование карты: </b> ' + card.interpretation;
     
       await axios.post(url+'sendMessage',
       {
